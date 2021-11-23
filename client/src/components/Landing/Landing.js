@@ -31,29 +31,35 @@ const useStyles = makeStyles((theme) => ({
     alignContent: "center",
     justifyContent: "center",
     [theme.breakpoints.down("xs")]: {
-      maxWidth: "250px",
+      maxWidth: theme.spacing(25),
     },
     [theme.breakpoints.up("sm")]: {
-      maxWidth: "400px",
+      maxWidth: theme.spacing(40),
     },
   },
   speechBubble: {
     width: "90px",
     [theme.breakpoints.down("xs")]: {
-      marginTop: "-10px",
-      marginBottom: "10px",
+      marginTop: theme.spacing(-1),
+      marginBottom: theme.spacing(1),
     },
     [theme.breakpoints.up("sm")]: {
-      marginTop: "-50px",
-      marginBottom: "25px",
+      marginTop: theme.spacing(-5),
+      marginBottom: theme.spacing(2.5),
     },
   },
   titleText: {
     [theme.breakpoints.down("xs")]: {
-      fontSize: "1.5rem",
+      fontSize: 26,
     },
     [theme.breakpoints.up("sm")]: {
-      fontSize: "2rem",
+      fontSize: 28,
+    },
+    [theme.breakpoints.up("md")]: {
+      fontSize: 32,
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: 36,
     },
   },
 }));

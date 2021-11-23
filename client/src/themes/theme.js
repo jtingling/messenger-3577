@@ -4,7 +4,7 @@ export const theme = createTheme({
   typography: {
     fontFamily: "Open Sans, regular",
     fontWeight: "600",
-    fontSize: 'large',
+    fontSize: 20,
     button: {
       textTransform: "none",
       letterSpacing: 0,
@@ -20,7 +20,7 @@ export const theme = createTheme({
     MuiInput: {
       input: {
         fontWeight: "600",
-        fontSize: '1rem'
+        fontSize: 20
       }
     },
     MuiFormControl: {
@@ -29,15 +29,12 @@ export const theme = createTheme({
       }
     },
     MuiButton: {
-      '&:hover': {
-        backgroundColor: 'transparent'
-      },
       containedSizeLarge: {
         padding: '20px 75px',
         marginTop: '50px'
       },
       label: {
-        fontSize: 'large',
+        fontSize: 20,
         fontWeight: '500',
 
       },
@@ -53,7 +50,7 @@ export const theme = createTheme({
     },
     MuiInputLabel: {
       formControl: {
-        fontSize: 'x-large'
+        fontSize: 24
       }
     },
     MuiTypography: {
@@ -66,4 +63,5 @@ export const theme = createTheme({
     primary: { main: "#3A8DFF" },
     secondary: { main: "#B0B0B0" }
   },
+  spacing: 10,
 });

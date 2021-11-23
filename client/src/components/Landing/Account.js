@@ -16,10 +16,10 @@ const styles = (theme) => ({
   },
   subtitle: {
     color: `${theme.palette.secondary.main}`,
-    fontSize: "larger",
+    fontSize: 20,
     paddingRight: "5%",
     [theme.breakpoints.down("xs")]: {
-      fontSize: "medium",
+      fontSize: 18,
     },
   },
   button: {
@@ -35,7 +35,7 @@ const Account = (props) => {
   
   return (
     <Grid item xs={12} className={props.classes.accountGroup}>
-      <Typography variant="string" className={props.classes.subtitle}>
+      <Typography varient="string" className={props.classes.subtitle}>
         {callToAction}
       </Typography>
       <Button
