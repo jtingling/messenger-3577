@@ -1,0 +1,1 @@
+export { loginConfig, signupConfig } from './formConfig'
