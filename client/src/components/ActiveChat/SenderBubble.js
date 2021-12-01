@@ -65,7 +65,7 @@ const SenderBubble = (props) => {
   const renderBubbleText = (bubbleType, textType) => {
     return (
       <Grid item className={bubbleType}>
-        {text.length === 0 ? <></> : <Typography className={textType}>{text}</Typography>}
+        {text.length !== 0 && <Typography className={textType}>{text}</Typography>}
       </Grid>
     );
   };

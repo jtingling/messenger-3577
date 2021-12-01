@@ -43,7 +43,6 @@ const CurrentUser = (props) => {
     setMenuAnchorEl(null);
   };
   const handleMenuClick = (event) => {
-    console.log(event);
     setMenuAnchorEl(event.currentTarget);
   };
   const handleLogout = async () => {
