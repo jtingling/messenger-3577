@@ -68,9 +68,11 @@ const Input = (props) => {
               console.error(err);
             }
             if (result.event === "queues-end") {
-              const media = result.info.files.map((file) => {
-                return file.uploadInfo.public_id;
+              let media = [];
+              result.info.files.forEach((file, idx) => {
+                media.push({id: idx, publicId: file.uploadInfo.public_id})
               });
+
               setAttachments(media);
               setWidgetStatus(result.event);
             }

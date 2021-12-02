@@ -97,13 +97,14 @@ const SenderBubble = (props) => {
         <>
         {renderBubbleText(classes.multipleImgText, classes.text)}
           <Grid container spacing={1}>
-            {attachments.map((imageId) => {
+            {attachments.map((image) => {
+              const attachment = JSON.parse(image);
               return (
-                <Grid item>
+                <Grid item key={`${attachment.id}`}>
                   {renderCloundinaryImage(
                     { height: 100, width: 125 }, 
                     classes.media,
-                    imageId
+                    attachment.publicId
                   )}
                 </Grid>
               );
